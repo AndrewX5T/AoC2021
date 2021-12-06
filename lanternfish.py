@@ -46,8 +46,8 @@ print('Initial state: {0}'.format(pool))
 for day in range(0, cycles):
     pool = TickDown(pool)
     pool = Spawn(pool)
-    print('After {0} Days: {1}'.format(day+1, pool))
     pool = Reset(pool)
+    print('After {0} Days: {1}'.format(day+1, pool))
 #endfor
 
 print('Total fish after {0} days: {1}'.format(cycles, Sum(pool)))
